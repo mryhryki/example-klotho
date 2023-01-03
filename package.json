@@ -1,0 +1,10 @@
+{
+  "name": "example-klotho",
+  "author": "mryhryki",
+  "license": "MIT",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": ":"
+  }
+}

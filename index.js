@@ -11,6 +11,7 @@ const petsByOwner = new Map();
 
 async function addPetName(req, res) {
   try {
+    const { owner, pet } = req
     await petsByOwner.set(owner, pet);
     res.send(`Added ${pet} as ${owner}'s pet`)
   } catch (error) {

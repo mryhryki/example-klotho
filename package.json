@@ -5,6 +5,14 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test": ":"
+    "_check:klotho": "type klotho",
+    "_compile": "klotho . --app my-first-app --provider aws",
+    "_deploy": "cd ./compiled/ && npm install && pulumi up",
+    "_destroy": "cd ./compiled/ && pulumi down",
+    "deploy": "run-s _check:klotho _compile _deploy",
+    "destroy": "run-s _check:klotho _destroy"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }

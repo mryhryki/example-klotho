@@ -1,6 +1,7 @@
 # example-klotho
 
-https://klo.dev/
+- https://klo.dev/
+- https://klo.dev/docs/
 
 ## Deploy
 
